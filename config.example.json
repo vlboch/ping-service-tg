@@ -1,0 +1,9 @@
+{
+  "resources_list": [
+    "https://google.com/"
+  ],
+  "admin_ids": [],
+  "interval_timeout": 5000,
+  "bot_token": "",
+  "silent": true
+}
