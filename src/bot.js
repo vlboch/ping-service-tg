@@ -13,13 +13,16 @@ export class Bot {
 
   initActions() {
     this.bot.command("me", (ctx) => {
-      ctx.reply(ctx.message.from.id)
+      ctx.reply('ID: ' + ctx.message.from.id);
       this.userIDs.add(ctx.message.from.id);
     });
 
-
     this.bot.command("ping", (ctx) => {
       ctx.reply("pong");
+    });
+
+    this.bot.command("mute", () => {
+      global.config.silent = !global.config.silent;
     });
   }
 
